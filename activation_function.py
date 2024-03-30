@@ -20,8 +20,8 @@ def tanh(x):
 # Define input values
 #x = np.linspace(-5, 5, 100)  # Range of input values
 random_values = [-3.5, -1.2, 0, 2.8, -4.1, 1.5, -0.7, 3.2, -2.4, 4.6]
-#x = np.array(random_values)
-#x =np.sort(x) 
+x = np.array(random_values)
+x =np.sort(x) 
 # Generate activation function outputs
 y_sigmoid = sigmoid(x)
 y_relu = relu(x)
