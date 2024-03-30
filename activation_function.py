@@ -24,18 +24,18 @@ random_values = [-3.5, -1.2, 0, 2.8, -4.1, 1.5, -0.7, 3.2, -2.4, 4.6]
 #x =np.sort(x) 
 # Generate activation function outputs
 y_sigmoid = sigmoid(x)
-#y_relu = relu(x)
-#y_leaky_relu = leaky_relu(x)
-#y_tanh = tanh(x)
+y_relu = relu(x)
+y_leaky_relu = leaky_relu(x)
+y_tanh = tanh(x)
 
 # Create the plot
 plt.figure(figsize=(10, 6))
 
 # Plot each activation function with a label
 plt.plot(x, y_sigmoid, label='Sigmoid')
-'''plt.plot(x, y_relu, label='ReLU')
+plt.plot(x, y_relu, label='ReLU')
 plt.plot(x, y_leaky_relu, label='Leaky ReLU')
-plt.plot(x, y_tanh, label='Tanh')'''
+plt.plot(x, y_tanh, label='Tanh')
 
 # Add labels and title
 plt.xlabel('Input (x)')
